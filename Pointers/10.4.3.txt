@@ -1,0 +1,15 @@
+char array: 9
+char pointer: 8
+word: Greetings, copy: Greetings
+
+De eerste printf-uitvoer geeft de grootte van de word-array weer, 
+die 9 is (8 karakters voor de string plus een extra karakter voor 
+de null-terminator die aan het eind van elke string voorkomt in C). 
+De tweede printf-uitvoer geeft de grootte van de pword-pointer weer, 
+die 8 is op de meeste moderne computers (dit is de grootte van een pointer
+ op het systeem waarop het programma wordt uitgevoerd).
+
+De strncpy-functie wordt gebruikt om een kopie te maken van de 
+word-array en deze in de copy-array op te slaan. De derde 
+printf-uitvoer geeft dan de inhoud van de word- en copy-arrays weer, 
+wat beide "Greetings" zijn.

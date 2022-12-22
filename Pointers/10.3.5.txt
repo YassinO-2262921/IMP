@@ -1,0 +1,28 @@
+  -----------------
+  | vec1 (ptr)    |  <-- vec1 parameter in vector_multiplication
+  -----------------
+  | vec2 (ptr)    |  <-- vec2 parameter in vector_multiplication
+  -----------------
+  | result (ptr)  |  <-- result parameter in vector_multiplication
+  -----------------
+  | vec1 (data)   |  <-- vec1 array in main
+  |   |   |   |   |
+  | 1.0| 2.0| 3.0|
+  |   |   |   |   |
+  -----------------
+  | vec2 (data)   |  <-- vec2 array in main
+  |   |   |   |   |
+  | 4.0| 5.0| 6.0|
+  |   |   |   |   |
+  -----------------
+  | result (data) |  <-- result array in main
+  |   |   |   |   |
+  |   |   |   |   |
+  |   |   |   |   |
+  -----------------
+  | i (int)       |  <-- local variable in vector_multiplication
+  -----------------
+  | main          |  <-- return address from vector_multiplication
+  -----------------
+  | main (ptr)    |  <-- stack frame for main
+  -----------------

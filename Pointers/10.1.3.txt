@@ -1,0 +1,10 @@
+The following expressions are not legal:
+
+    i = (*&)j: this expression has a syntax error because the & operator must be applied to a variable or an expression, but it is not followed by any operand.
+    i = *p++ + *q: this expression is not legal because the ++ operator can only be applied to variables, but it is applied to the p pointer which is not a variable.
+
+The following expressions are legal but will not be used in practice:
+
+    p = &*&i: this expression is legal because it uses the & and * operators to get the address of i and then dereference it. However, this is not a useful operation because it simply retrieves the value of i without changing it in any way.
+    q = &p: this expression is legal because it uses the & operator to get the address of the p pointer and assigns it to the q pointer. However, this is not a useful operation because it simply assigns the address of the p pointer to the q pointer without changing the value of p in any way.
+    *q = &j: this expression is legal because it uses the & operator to get the address of j and assigns it to the dereferenced q pointer. However, this is not a useful operation because it simply assigns the address of j to the q pointer without changing the value of j in any way.
